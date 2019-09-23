@@ -29,6 +29,7 @@ window.addEventListener('click',(evt)=>{
     distanceMouseBall.differenceVector(mouseVector,balls[i].position);
     if(distanceMouseBall.magnitude < 20){
       balls[i].color = "blue";
+      return null;
     }
   }
 })
