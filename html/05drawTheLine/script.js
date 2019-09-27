@@ -7,7 +7,7 @@ const height = window.innerHeight;
 canvas.width = width;
 canvas.height = height;
 
-let f = new LinearFunction(-0.2,200);
+let f = new LinearFunction(1/3,200-200/3);
 
 
 
