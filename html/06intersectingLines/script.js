@@ -9,6 +9,7 @@ canvas.height = height;
 
 let A = new Point(new Vector2d(200,200),15,"red","A",true);
 let B = new Point(new Vector2d(500,200),15,"blue","B",true);
+let l = new LinearFunction(1,1);
 
 function animate(){
   requestAnimationFrame(animate);
