@@ -7,6 +7,8 @@ const height = window.innerHeight;
 canvas.width = width;
 canvas.height = height;
 
+let grid = new Grid();
+
 let A = new Point(new Vector2d(200,200),15,"red","A",true);
 let B = new Point(new Vector2d(700,400),15,"blue","B",true);
 let C = new Point(new Vector2d(800,100),15,"green","C",true);
@@ -18,6 +20,8 @@ let m = new LinearFunction(-1,100);
 function animate(){
   requestAnimationFrame(animate);
   context.clearRect(0,0,width,height);
+  grid.draw(context);
+
   l.defineLineWithTwoPoints(A,B);
   l.draw(context);
 
