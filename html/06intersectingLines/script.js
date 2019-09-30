@@ -11,7 +11,7 @@ let A = new Point(new Vector2d(200,200),15,"red","A",true);
 let B = new Point(new Vector2d(700,400),15,"blue","B",true);
 let C = new Point(new Vector2d(800,100),15,"green","C",true);
 let D = new Point(new Vector2d(300,500),15,"yellow","D",true);
-let S = new Point(new Vector2d(500,400),10,"white","S",false)
+let S = new Point(new Vector2d(100,400),10,"white","S",false)
 let l = new LinearFunction(1,1);
 let m = new LinearFunction(-1,100);
 
@@ -23,6 +23,9 @@ function animate(){
 
   m.defineLineWithTwoPoints(C,D);
   m.draw(context);
+
+  S.position.dx = l.intersection(m).x;
+  S.position.dy = l.intersection(m).y;
 
   A.draw(context);
   B.draw(context);
