@@ -13,6 +13,7 @@ let arrow = new Arrow();
 function animate(){
   requestAnimationFrame(animate);
   context.clearRect(0,0,width,height);
+  arrow.draw(context);
 
 }
 
