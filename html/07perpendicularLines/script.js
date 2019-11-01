@@ -21,6 +21,10 @@ function animate(){
   grid.draw(context);
   l.defineLineWithTwoPoints(A,B);
   l.draw(context);
+  m.slope = - 1/l.slope;
+
+  m.draw(context);
+
   A.draw(context);
   B.draw(context);
 
