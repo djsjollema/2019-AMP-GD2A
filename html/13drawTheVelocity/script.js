@@ -7,13 +7,14 @@ const height = window.innerHeight;
 canvas.width = width;
 canvas.height = height;
 
-let point = new DPoint(new Vector2d(200,200),new Vector2d(12,14),new Vector2d(0,0),20,"yellow","point")
+let point = new DPoint(new Vector2d(200,200),new Vector2d(4,3),new Vector2d(0,0),20,"yellow","point")
 
 function animate(){
   requestAnimationFrame(animate);
   context.clearRect(0,0,width,height);
   point.update();
-  point.draw(context)
+  point.draw(context);
+  point.vel.draw(context,point.pos)
 }
 
 animate();
