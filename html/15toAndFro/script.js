@@ -26,6 +26,12 @@ function animate(){
   B.position.draw(context,new Vector2d(0,0),1,"white");
   point.pos.draw(context,new Vector2d(0,0),1,"white");
 
+  point.vel.differenceVector(B.position,point.pos);
+  point.vel.scalMul(0.01);
+
+  point.update();
+  point.vel.draw(context,point.pos,20,"red");
+
 
 
 
