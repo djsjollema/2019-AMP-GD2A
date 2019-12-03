@@ -10,6 +10,8 @@ canvas.height = height;
 let A = new Point(new Vector2d(200,300),20,"red","A",true);
 let B = new Point(new Vector2d(500,400),20,"blue","B",true);
 
+let point = new DPoint(new Vector2d(200,300),new Vector2d(0,0),new Vector2d(0,0),10,"purple","p")
+
 let grid = new Grid();
 
 function animate(){
@@ -20,6 +22,7 @@ function animate(){
   drawLineAB();
   A.draw(context);
   B.draw(context);
+  point.draw(context);
 
 
 }
