@@ -23,6 +23,10 @@ function animate(){
   A.draw(context);
   B.draw(context);
   point.draw(context);
+  B.position.draw(context,new Vector2d(0,0),1,"white");
+  point.pos.draw(context,new Vector2d(0,0),1,"white");
+
+
 
 
 }
